@@ -1,0 +1,196 @@
+:root{
+    --primary-color: #49BBBD;
+    --background-color: #9DCCFF33;
+}
+
+header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding: 30px 0 28px;
+}
+
+.pages-list{
+    display: flex;
+    gap: 80px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile h2{
+    font-size: 18px;
+    font-family: "Poppins";
+}
+
+.lessons{
+    background-color: var(--background-color);
+    padding: 52px 50px 155px;
+}
+
+.lessons .welcome-back{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    opacity: 100%;
+    align-items: center;
+}
+
+.lessons .welcome-back h2{
+    font-weight: 600;
+    font-size: 36px;  
+}
+
+.lessons .welcome-back a{
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.lessons .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lesson{
+    box-sizing: border-box;
+    padding: 20px 21px 12px;
+    width: calc((100% - 100px) / 3);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.lesson h3{
+    font-size: 24px;
+    font-weight: 500px;
+    line-height: 180%;
+    padding: 12px 0 10px;
+}
+
+.lesson img{
+    width: 100%;
+}
+
+.lesson progress{
+    width: 100%;
+    accent-color: var(--primary-color);
+    margin: 25px 0 12px;
+}
+
+.lesson h4{
+    font-size: 14px;
+    font-weight: 600px;
+    opacity: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media screen and (max-width: 600px ){
+    .container{
+        width: calc( 100% - 50px);
+    }
+
+    .logo img{
+        width: 80px;
+    }
+
+    .profile{
+        gap: 5px;
+    }
+    .profile img{
+        width: 40px;
+    }
+
+    .pages{
+        display: none;
+    }
+
+}
+
+/* @media screen and (max-width: 600px ){
+    .container{
+        width: calc( 100% - 50px);
+    }
+
+    .pages{
+        display: none;
+    }
+
+} */
+
+@media screen and (min-width: 601px) and (max-width: 768px ){
+    .container{
+        width: calc( 100% - 100px);
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .profile{
+        gap: 7px;
+    }
+    .profile img{
+        width: 50px;
+    }
+
+    .pages{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px ) {
+    .container{
+        width: calc( 100% - 150px);
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .profile{
+        gap: 9px;
+    }
+    .profile img{
+        width: 55px;
+    }
+
+    .pages{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .logo img{
+        width: 80px;
+    }
+
+    .profile{
+        gap: 5px;
+    }
+    .profile img{
+        width: 40px;
+    }
+
+    .pages-list{
+        gap:60px;
+    }
+
+    .burger-nav-icon{
+        display: none;
+    }
+}
+
+
