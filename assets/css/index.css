@@ -38,6 +38,7 @@ header .row {
 
 .lessons .welcome-back{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 50px;
     opacity: 100%;
@@ -95,6 +96,7 @@ header .row {
 }
 
 
+
 @media screen and (max-width: 600px ){
     .container{
         width: calc( 100% - 50px);
@@ -115,18 +117,46 @@ header .row {
         display: none;
     }
 
+    .lessons{
+        padding: 32px 28px ;
+    }
+
+    .lessons .row {
+        row-gap: 20px;
+    }
+
+    .lessons .welcome-back{
+        padding-bottom: 35px;
+    }
+
+    .lessons .welcome-back h2{
+        font-size: 26px;  
+        padding-bottom: 10px;
+    }
+
+    .lessons .welcome-back a{
+        font-size: 18px;
+    }
+    
+    .lesson{
+        width: 100%;
+        padding: 20px 21px 12px;
+    }
+
+    .lesson h3{
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .lesson progress{
+        margin: 15px 0 8px;
+    }
+
+    .lesson h4{
+        font-size: 12px;
+    }
+
 }
-
-/* @media screen and (max-width: 600px ){
-    .container{
-        width: calc( 100% - 50px);
-    }
-
-    .pages{
-        display: none;
-    }
-
-} */
 
 @media screen and (min-width: 601px) and (max-width: 768px ){
     .container{
@@ -146,6 +176,46 @@ header .row {
 
     .pages{
         display: none;
+    }
+
+
+    .lessons{
+        padding: 32px 28px ;
+    }
+
+    .lessons .row {
+        row-gap: 30px;
+    }
+
+    .lessons .welcome-back{
+        padding-bottom: 35px;
+    }
+
+    .lessons .welcome-back h2{
+        font-size: 30px;  
+        padding-bottom: 10px;
+    }
+
+    .lessons .welcome-back a{
+        font-size: 22px;
+    }
+    
+    .lesson{
+        width: calc((100% - 50px) / 2);
+        padding: 20px 21px 12px;
+    }
+
+    .lesson h3{
+        font-size: 20px;
+        line-height: 160%;
+    }
+
+    .lesson progress{
+        margin: 18px 0 10px;
+    }
+
+    .lesson h4{
+        font-size: 14px;
     }
 
 }
@@ -169,6 +239,48 @@ header .row {
     .pages{
         display: none;
     }
+
+
+    .lessons{
+        padding: 32px 28px ;
+    }
+
+    .lessons .row {
+        row-gap: 30px;
+    }
+
+    .lessons .welcome-back{
+        padding-bottom: 35px;
+    }
+
+    .lessons .welcome-back h2{
+        font-size: 30px;  
+        padding-bottom: 10px;
+    }
+
+    .lessons .welcome-back a{
+        font-size: 22px;
+    }
+    
+    .lesson{
+        width: calc((100% - 50px) / 2);
+        padding: 20px 21px 12px;
+    }
+
+    .lesson h3{
+        font-size: 22px;
+        line-height: 160%;
+    }
+
+    .lesson progress{
+        margin: 18px 0 10px;
+    }
+
+    .lesson h4{
+        font-size: 15px;
+    }
+
+    
 }
 
 @media screen and (min-width: 1200px) {
