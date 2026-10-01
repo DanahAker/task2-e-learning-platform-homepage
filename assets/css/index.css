@@ -1,6 +1,14 @@
 :root{
     --primary-color: #49BBBD;
     --background-color: #9DCCFF33;
+    --font-color: #696984;
+    --h3-font-color: #252641;
+    --shadow: #D9D9D9
+}
+
+.background-blue{
+    background-color: var(--background-color);
+
 }
 
 header .row {
@@ -32,7 +40,6 @@ header .row {
 }
 
 .lessons{
-    background-color: var(--background-color);
     padding: 52px 50px 155px;
 }
 
@@ -52,7 +59,7 @@ header .row {
 
 .lessons .welcome-back a{
     color: var(--primary-color);
-    font-weight: 900;
+    font-weight: 700;
     font-size: 20px;
 }
 
@@ -75,6 +82,7 @@ header .row {
     font-weight: 500px;
     line-height: 180%;
     padding: 12px 0 10px;
+    color: var(--h3-font-color);
 }
 
 .lesson img{
@@ -115,14 +123,15 @@ header .row {
 .course{
     width: calc((100% - (88px * 3)) / 4);
     border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 4px 10px var(--shadow); 
     padding: 30px 35px 59px;
     box-sizing: border-box;
     text-align: center;
 }
 
 .course h3{
-    padding: 20px 0 25px
+    padding: 20px 0 25px;
+    color: var(--h3-font-color);
 }
 
 .icon{
@@ -134,7 +143,108 @@ header .row {
     margin: 0 auto;
 }
 
+.recommendations{
+    padding: 52px 50px 155px;
+}
 
+.recommendations .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recommendations .recommended-for-you{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommendations .recommended-for-you h2{
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.recommendations .recommended-for-you a{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.recommended{
+    width: calc((100% - 150px) / 4);
+    padding: 20px 21px 35px;
+    background-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;  
+    box-shadow: 0px 4px 10px var(--shadow); 
+  
+}
+
+.recommended .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.recommended .design{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommended h6 {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 500px;
+    color: var(--font-color);
+    line-height: 180%;
+}
+
+.recommended .duration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommended h3{
+    font-size: 24px;
+    font-weight: 500px;
+    color: var(--h3-font-color);
+
+}
+
+.recommended p{
+    padding: 21px 0 17px;
+    color: var(--font-color);
+}
+
+.recommended-img{
+    width: 100%;
+}
+
+.recommended .profile-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommended .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommended .old-price{
+    text-decoration: line-through;
+    opacity: 50%;
+    font-size: 18px;
+    padding-right: 14px;
+}
+
+.recommended .new-price{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 800px;
+}
 
 
 @media screen and (max-width: 600px ){
@@ -186,6 +296,8 @@ header .row {
     .lesson h3{
         font-size: 18px;
         line-height: 150%;
+        color: var(--h3-font-color);
+
     }
 
     .lesson progress{
@@ -215,7 +327,8 @@ header .row {
     }
 
     .course h3{
-        padding: 10px 0 15px
+        padding: 10px 0 15px;
+        color: var(--h3-font-color);
     }
 
 }
