@@ -95,6 +95,46 @@ header .row {
     justify-content: flex-end;
 }
 
+.courses{
+    padding: 52px 50px 155px;
+}
+.courses h2{
+    font-size: 36px;
+    font-weight: 500px;
+    padding-bottom: 53px ;
+}
+
+.courses .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 80px;
+    
+}
+
+.course{
+    width: calc((100% - (88px * 3)) / 4);
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    padding: 30px 35px 59px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.course h3{
+    padding: 20px 0 25px
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
 
 
 @media screen and (max-width: 600px ){
@@ -154,6 +194,28 @@ header .row {
 
     .lesson h4{
         font-size: 12px;
+    }
+
+    .courses{
+        padding: 32px 28px ;
+    }
+
+    .courses h2{
+        font-size: 26px;  
+        padding-bottom: 30px;
+    }
+
+    .courses .row{
+        gap: 20px;  
+    }
+
+    .course{
+        width: 100%;
+        padding: 20px 20px 30px;
+    }
+
+    .course h3{
+        padding: 10px 0 15px
     }
 
 }
@@ -218,6 +280,29 @@ header .row {
         font-size: 14px;
     }
 
+    .courses{
+        padding: 32px 28px ;
+    }
+
+    .courses h2{
+        font-size: 28px;  
+        padding-bottom: 30px;
+    }
+
+    .courses .row{
+        gap: 25px;  
+    }
+
+    .course{
+        width: calc((100% - 40px) / 2);
+        padding: 20px 20px 30px;
+    }
+
+    .course h3{
+        padding: 13px 0 18px
+    }
+
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px ) {
@@ -280,7 +365,28 @@ header .row {
         font-size: 15px;
     }
 
-    
+    .courses{
+        padding: 32px 28px ;
+    }
+
+    .courses h2{
+        font-size: 28px;  
+        padding-bottom: 30px;
+    }
+
+    .courses .row{
+        gap: 25px;  
+    }
+
+    .course{
+        width: calc((100% - 60px) / 3);
+        padding: 20px 20px 30px;
+    }
+
+    .course h3{
+        padding: 13px 0 18px
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
