@@ -81,7 +81,7 @@ header .row {
 
 .lesson h3{
     font-size: 24px;
-    font-weight: 500px;
+    font-weight: 500;
     line-height: 180%;
     padding: 12px 0 10px;
     color: var(--h3-font-color);
@@ -99,7 +99,7 @@ header .row {
 
 .lesson h4{
     font-size: 14px;
-    font-weight: 600px;
+    font-weight: 600;
     opacity: 50%;
     display: flex;
     justify-content: flex-end;
@@ -110,7 +110,7 @@ header .row {
 }
 .courses h2{
     font-size: 36px;
-    font-weight: 500px;
+    font-weight: 500;
     padding-bottom: 53px ;
 }
 
@@ -118,12 +118,12 @@ header .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 80px;
+    gap: 30px;
     
 }
 
 .course{
-    width: calc((100% - (88px * 3)) / 4);
+    width: calc((100% - 90px) / 4);
     border-radius: 20px;
     box-shadow: 0px 4px 10px var(--shadow); 
     padding: 30px 35px 59px;
@@ -136,7 +136,11 @@ header .row {
     color: var(--h3-font-color);
 }
 
-.icon{
+.course p{
+    font-size: 18px;
+}
+
+.course .icon{
     width: 100px;
     height: 100px;
     display: flex;
@@ -153,16 +157,19 @@ header .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
 .recommendations .recommended-for-you{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .recommendations .recommended-for-you h2{
     font-size: 30px;
-    padding-bottom: 50px;
 }
 
 .recommendations .recommended-for-you a{
@@ -197,7 +204,7 @@ header .row {
 .recommended h6 {
     padding-left: 10px;
     font-size: 14px;
-    font-weight: 500px;
+    font-weight: 500;
     color: var(--font-color);
     line-height: 180%;
 }
@@ -210,7 +217,7 @@ header .row {
 
 .recommended h3{
     font-size: 24px;
-    font-weight: 500px;
+    font-weight: 500;
     color: var(--h3-font-color);
 
 }
@@ -245,7 +252,7 @@ header .row {
 .recommended .new-price{
     color: var(--primary-color);
     font-size: 24px;
-    font-weight: 800px;
+    font-weight: 800;
 }
 
 
@@ -253,7 +260,6 @@ footer{
     background-color: var(--footer-background-color);
     color: var(--footer-color);
     padding: 74px 0 40px;
-    /* text-align: center; */
 }
 
 footer .logo-title{
@@ -270,7 +276,7 @@ footer .logo-title h2{
     padding-left: 44px; 
     color: white;
     font-size: 22px;
-    font-weight: 600px;
+    font-weight: 600;
     letter-spacing: 4%;
     width: 165px;
 }
@@ -288,14 +294,14 @@ footer .subscribe .submit-email{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 21px;
 }
 
 footer .subscribe input[type="email"]{
     padding: 14px 36px;
     border-radius: 60px;
-    margin-left: 21px;
     color: var(--footer-color);
-    width: 420px;
     background-color: transparent;
     font-size: 22px;
     border: 1px solid var(--footer-color);
@@ -305,10 +311,8 @@ footer .subscribe input[type="email"]{
 footer .subscribe input[type="submit"]{
     padding: 14px 36px;
     border-radius: 60px;
-    margin-left: 21px;
     background-color: var(--primary-color);
     color: white;
-    width: 190px;
     font-size: 22px;
     border: none
 }
@@ -318,6 +322,7 @@ footer .sections{
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 footer .sections a{
@@ -384,8 +389,6 @@ footer .copyright{
     .lesson h3{
         font-size: 18px;
         line-height: 150%;
-        color: var(--h3-font-color);
-
     }
 
     .lesson progress{
@@ -406,7 +409,7 @@ footer .copyright{
     }
 
     .courses .row{
-        gap: 20px;  
+        row-gap: 20px;
     }
 
     .course{
@@ -418,7 +421,74 @@ footer .copyright{
         padding: 10px 0 15px;
         color: var(--h3-font-color);
     }
+    
+    .recommendations{
+        padding: 32px 28px ;
+    }
 
+    .recommendations .row{
+        row-gap: 20px;
+    }
+
+    .recommendations .recommended-for-you{
+        padding-bottom: 35px;
+    }
+
+    .recommendations .recommended-for-you h2{
+        font-size: 24px;  
+    }
+
+    .recommendations .recommended-for-you a{
+        font-size: 18px;
+    }
+
+    .recommended{
+        width: 100%;
+        padding: 20px 21px 12px;
+    }
+
+    .recommended h3{
+        font-size: 18px;
+    }
+
+    .recommended p{
+        font-size: 14px;
+    }
+
+    .recommended .old-price{
+        font-size: 16px;
+    }
+
+    .recommended .new-price{
+        font-size: 22px;
+    }
+
+    footer{
+        padding: 74px 20px 40px;
+    }
+
+    footer .logo-title img{
+        padding-right: 40px; 
+    }
+
+    footer .logo-title h2{
+        padding-left: 44px; 
+        font-size: 18px;
+    }
+
+    footer .subscribe{
+        padding: 55px 0;
+    }
+
+    footer .sections a{
+        color: var(--footer-color);
+        font-size: 18px;
+        padding: 0 18px;
+    }
+
+    footer .copyright{
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px ){
@@ -431,7 +501,7 @@ footer .copyright{
     }
 
     .profile{
-        gap: 7px;
+        gap: 1px;
     }
     .profile img{
         width: 50px;
@@ -440,7 +510,6 @@ footer .copyright{
     .pages{
         display: none;
     }
-
 
     .lessons{
         padding: 32px 28px ;
@@ -504,9 +573,54 @@ footer .copyright{
     }
 
 
+    .recommendations{
+        padding: 32px 28px ;
+    }
+
+    .recommendations .row{
+        gap: 25px;
+    }
+
+
+    .recommendations .recommended-for-you h2{
+        font-size: 30px;
+    }
+
+    .recommended{
+        width: calc((100% - 25px) / 2);
+        padding: 15px 16px 12px;    
+    }
+
+    .recommended .info{
+        padding: 10px 0;
+    }
+
+    .recommended h6 {
+        padding-left: 7px;
+        font-size: 12px;
+        line-height: 160%;
+    }
+
+    .recommended h3{
+        font-size: 16px;
+    }
+
+    .recommended p{
+        padding: 13px 0 15px;
+        font-size: 15px;
+    }
+
+    .recommended .old-price{
+        font-size: 14px;
+        padding-right: 5px;
+    }
+
+    .recommended .new-price{
+        font-size: 20px;
+    }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px ) {
+@media screen and (min-width: 769px) and (max-width: 1300px ) {
     .container{
         width: calc( 100% - 150px);
     }
@@ -576,7 +690,7 @@ footer .copyright{
     }
 
     .courses .row{
-        gap: 25px;  
+        gap: 20px;  
     }
 
     .course{
@@ -588,9 +702,26 @@ footer .copyright{
         padding: 13px 0 18px
     }
 
+    .recommendations{
+        padding: 52px 50px 75px;
+    }
+
+    .recommendations .row{
+        gap: 25px;
+    }
+
+    .recommended{
+        width: calc((100% - 25px) / 2);
+        padding: 20px 21px 28px;
+    }
+
+    .recommended h3{
+        font-size: 22px;
+    }
+
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1301px) {
     
     .logo img{
         width: 80px;
