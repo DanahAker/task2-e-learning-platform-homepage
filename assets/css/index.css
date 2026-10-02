@@ -13,12 +13,6 @@
 
 }
 
-header .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo{
     padding: 30px 0 28px;
 }
@@ -36,7 +30,7 @@ header .row {
     gap: 12px;
 }
 
-.profile h2{
+.profile .profile-name{
     font-size: 18px;
     font-family: "Poppins";
 }
@@ -50,7 +44,6 @@ header .row {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 50px;
-    opacity: 100%;
     align-items: center;
 }
 
@@ -66,9 +59,7 @@ header .row {
 }
 
 .lessons .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 50px;
 }
 
 .lesson{
@@ -100,7 +91,7 @@ header .row {
 .lesson h4{
     font-size: 14px;
     font-weight: 600;
-    opacity: 50%;
+    opacity: .5;
     display: flex;
     justify-content: flex-end;
 }
@@ -115,11 +106,7 @@ header .row {
 }
 
 .courses .row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     gap: 30px;
-    
 }
 
 .course{
@@ -154,9 +141,6 @@ header .row {
 }
 
 .recommendations .row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     gap: 50px;
 }
 
@@ -201,7 +185,7 @@ header .row {
     align-items: center;
 }
 
-.recommended h6 {
+.recommended .design span, .recommended .duration span {
     padding-left: 10px;
     font-size: 14px;
     font-weight: 500;
@@ -277,7 +261,7 @@ footer .logo-title h2{
     color: white;
     font-size: 22px;
     font-weight: 600;
-    letter-spacing: 4%;
+    letter-spacing: 2px;
     width: 165px;
 }
 
@@ -314,7 +298,7 @@ footer .subscribe input[type="submit"]{
     background-color: var(--primary-color);
     color: white;
     font-size: 22px;
-    border: none
+    border: none;
 }
 
 
@@ -516,7 +500,7 @@ footer .copyright{
     }
 
     .lessons .row {
-        row-gap: 30px;
+        gap: 30px;
     }
 
     .lessons .welcome-back{
@@ -595,7 +579,7 @@ footer .copyright{
         padding: 10px 0;
     }
 
-    .recommended h6 {
+    .recommended .design span, .recommended .duration span{
         padding-left: 7px;
         font-size: 12px;
         line-height: 160%;
